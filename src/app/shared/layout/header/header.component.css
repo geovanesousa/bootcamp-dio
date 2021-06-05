@@ -1,0 +1,26 @@
+/* width é largura do cabecalho, padding é espacamento interno: top-bottom left-right
+caso sejam diferentes segue o sentido horário: top right bottom left 16px 24px 15px 23px
+rem esta sendo utilizado ao inves do px, porque rem se baseia no tamanho da fonte
+1rem na fonte padrao equivale a 16px*/
+.header {
+  padding: 1rem 1.5rem;
+
+  background-color: var(--primary-color);
+  /*flex é a forma de posicionar os elementos dentro de um container
+  direction: row alinha os itens na horizontal
+  flex-start os itens serao alinhados no inicio
+  center alinha os itens na vertical*/
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*media query altera as regras do css a partir de determinado tamanho
+nesse caso entra em acao de 768px pra baixo*/
+@media screen and (max-width: 768px) {
+ .header {
+  justify-content: center;
+ }
+}

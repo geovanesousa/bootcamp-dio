@@ -1,0 +1,10 @@
+/*alinha os stock cards em grade*/
+.container {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  /*wrap dá responsividade a grade de stock cards*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
